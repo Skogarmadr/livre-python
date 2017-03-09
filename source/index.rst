@@ -25,11 +25,8 @@ Table des matières
 
    collections/index.rst
    json/index.rst
-<<<<<<< HEAD
    io/index.rst
    super/index.rst
 
-=======
    pycrypto/index.rst
->>>>>>> srdjenovic
    licence.rst
