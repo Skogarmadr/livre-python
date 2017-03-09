@@ -20,5 +20,5 @@ Table des matières
 
    introduction.rst
    json/index.rst
-   pycrypto/pycrypto.rst
+   pycrypto/index.rst
    licence.rst
