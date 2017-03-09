@@ -1,4 +1,4 @@
-.. _json-tutorial:
+.. _pycrypto-tutorial:
 
 JSON
 ====
@@ -7,7 +7,7 @@ JSON
    :align: right
    :alt: JSON logo
 
-Par gros con [#yb]_
+Luca Srdjenovic [#yb]_
 
 Introduction
 ------------
