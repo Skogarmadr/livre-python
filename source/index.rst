@@ -47,6 +47,9 @@ Table des matières
    binary/index.rst
 
 
+   pycrypto/index.rst
+   licence.rst
+
 À propos de ce livre
 ====================
 
