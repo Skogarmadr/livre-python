@@ -6,7 +6,6 @@
 
 Luca Srdjenovic [#ls]_
 
-=======
 Introduction
 ------------
 
