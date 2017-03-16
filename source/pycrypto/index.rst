@@ -1,6 +1,6 @@
 .. _pycrypto-tutorial:
 
-JSON
+Pycrypto
 ====
 
 .. image:: ../_static/json.png
