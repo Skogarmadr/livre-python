@@ -6,7 +6,8 @@
 Luca Srdjenovic [#ls]_
 =======
 JSON
-====
+=======
+Pycrypto
 
 .. image:: ../_static/json.png
    :align: right
