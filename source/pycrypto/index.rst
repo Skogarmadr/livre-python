@@ -9,10 +9,6 @@ JSON
 =======
 Pycrypto
 
-.. image:: ../_static/json.png
-   :align: right
-   :alt: JSON logo
-
 Luca Srdjenovic [#yb]_
 
 Introduction
