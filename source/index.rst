@@ -35,6 +35,9 @@ Table des matières
    pytest/index.rst
    sphinx/index.rst
 
+   pycrypto/index.rst
+   licence.rst
+
 À propos de ce livre
 ====================
 
