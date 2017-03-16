@@ -1,11 +1,7 @@
 .. _pycrypto-tutorial:
 
 Pycrypto
-====
-
-.. image:: ../_static/json.png
-   :align: right
-   :alt: JSON logo
+========
 
 Luca Srdjenovic [#yb]_
 
