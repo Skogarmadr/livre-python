@@ -82,8 +82,8 @@ Cryptographie symmétrique ``AES``
 ---------------------------------
 
 Les données d'entrées qui sont la plupart du temps des chaînes de caractères
-sont transformées en une sorte de variable appelé :py:mod:`clef` ce qui va
-produire le :py:mod:`ciphertext`. Ceci est engendré par des algorithmes
+sont transformées en une sorte de variable appelé ``clef`` ce qui va
+produire le ``ciphertext``. Ceci est engendré par des algorithmes
 d'encryptions.
 Les block ciphers qui prennent des entrées d'une taille fixe entre 8 et 16 octets
 les chiffrent. Les cipher blocks requierent des modes. ``ECB``
