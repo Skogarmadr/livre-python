@@ -217,7 +217,7 @@ Par exemple, crééons un hash
   '422fbfbc67fe17c86642c5eaaa48f8b670cbed1b'
 
 Cryptographie symmétrique ``DES``
---------------------------------
+---------------------------------
 
 Voici un code pour crypter un string en DES
 
