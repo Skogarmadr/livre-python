@@ -159,10 +159,7 @@ La fonction pour enlever l'ajout
           return data
 
 Maintenant il nous faut une clef pour le symmétrique ciphers.
-Il y a 3 taille de clefs :
-  - 16 byte ou 128 bit
-  - 24 byte ou 192 bit
-  - 32 byte ou 256 bit
+Il y a 3 taille de clefs, 16 byte(128 bit), 25 byte(192 bit) ou 32 byte (256 bit).
 
 Nous allons simpwlement génerer une clef aléatoire de 32 bytes avec une fonction.
 
