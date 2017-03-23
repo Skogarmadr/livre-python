@@ -37,7 +37,7 @@ Quelques mots clefs pour aider la compréhension pour la suite :
     et la transforme en une unique sortie (de taille fixée).
 
 Type de cryptage
---------------
+----------------
 
 En cryptographie, il existe deux types de chiffrement.
 Le symmétrique et l'asymmétrique. Comme PyCrypto est vaste, nous allons juste
