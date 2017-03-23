@@ -9,7 +9,7 @@ Par Luca Srdjenovic INF2dlm-a [1]_
 Introduction
 ------------
 
-:py:mod:`Pycrypto` est une bibliothèque qui fournit  des outils de cryptographie primitive
+:py:mod:`pycrypto` est une bibliothèque qui fournit  des outils de cryptographie primitive
 implémententés en language Python.  Par exemple quand on fait du réseau, on a souvent
 besoin d'utiliser la cryptographie. En effet des méchants peuvent se situer entres deux machines
 qui commmuniquent pour les écouter. Et le méchant s'il le désire peut faire encore pire,
