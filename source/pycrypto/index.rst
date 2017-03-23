@@ -158,15 +158,13 @@ La fonction pour enlever l'ajout
       else:
           return data
 
-Maintenant il nous faut une clef pour le symmétrique ciphers. Il y a 3 taille de
-clefs :
+Maintenant il nous faut une clef pour le symmétrique ciphers.
+Il y a 3 taille de clefs:
     - 16 byte ou 128 bit
     - 24 byte ou 192 bit
     - 32 byte ou 256 bit
 
-
-
-Nous allons simplement génerer une clef aléatoire de 32 bytes avec une fonction.
+Nous allons simpwlement génerer une clef aléatoire de 32 bytes avec une fonction.
 
 
 .. code-block:: python3
