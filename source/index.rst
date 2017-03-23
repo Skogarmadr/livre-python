@@ -50,6 +50,9 @@ Table des matières
    pycrypto/index.rst
    licence.rst
 
+   pycrypto/index.rst
+   licence.rst
+
 À propos de ce livre
 ====================
 
