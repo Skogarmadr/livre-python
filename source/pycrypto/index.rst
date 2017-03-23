@@ -9,7 +9,7 @@ Par Luca Srdjenovic INF2dlm-a [1]_
 Introduction
 ------------
 
-Pycrypto est une bibliothèque qui fournit  des outils de cryptographie primitive
+``Pycrypto`` est une bibliothèque qui fournit  des outils de cryptographie primitive
 implémententés en language Python.  Par exemple quand on fait du réseau, on a souvent
 besoin d'utiliser la cryptographie. En effet des méchants peuvent se situer entres deux machines
 qui commmuniquent pour les écouter. Et le méchant s'il le désire peut faire encore pire,
@@ -24,16 +24,16 @@ Mots clefs
 ----------
 
 Quelques mots clefs pour aider la compréhension pour la suite :
-  - :py:mod:`plaintext`: message original
-  - :py:mod:`ciphertext`: message après la transformation cryptograhpique appliqué au
-    message orignal
-  - :py:mod:`encrypt`: produit le ciphertext en appliquant la transformation
-    cryptograhpique au plaintext
-  - :py:mod:`decrypt`: produit le plaintext en appliquant la transformation
+  - `plaintext`: message original
+  - `ciphertext`: message après la transformation cryptograhpique appliqué au
+     message orignal
+  - `encrypt`: produit le ciphertext en appliquant la transformation
+     cryptograhpique au plaintext
+  - `decrypt`: produit le plaintext en appliquant la transformation
     cryptograhpique au ciphertext
-  - :py:mod:`cipher`: une composition particulière de la transformation
+  - `cipher`: une composition particulière de la transformation
     cryptograhpique fournissant encryptage et décryptage
-  - :py:mod:`hash`: transformation cryptographique qui prend une grande entrée
+  - `hash`: transformation cryptographique qui prend une grande entrée
     et la transforme en une unique sortie (de taille fixée).
 
 Type de cryptage
@@ -44,8 +44,8 @@ Le symmétrique et l'asymmétrique. Comme PyCrypto est vaste, nous allons juste
 nous intéresser au chiffrement symétrique.
 
 Pour le symmétrique, il y a deux types de clef :
-  - :py:mod:`stream ciphers`: opération sur des flux de données un byte à la fois
-  - :py:mod:`block ciphers`: opération de blocks sur des données, en 16 bytes
+  - ``stream ciphers``: opération sur des flux de données un byte à la fois
+  - ``block ciphers``: opération de blocks sur des données, en 16 bytes
     à la fois.
 
 Nous allons utiliser le block cipher. Le plus commun et standard avancé est l'AES
@@ -86,14 +86,14 @@ sont transformées en une sorte de variable appelé :py:mod:`clef` ce qui va
 produire le :py:mod:`ciphertext`. Ceci est engendré par des algorithmes
 d'encryptions.
 Les block ciphers qui prennent des entrées d'une taille fixe entre 8 et 16 octets
-les chiffrent. Les cipher blocks requierent des modes. :py:mod:`ECB`
+les chiffrent. Les cipher blocks requierent des modes. ``ECB``
 (Electronic Code Book) est le mode le plus simple. Ce n'est pas le meilleur parce qu'il
 a une faille quand des fichiers contiennent du code qui a une longueur plus grande
 que celle des blocks.
-Pour palier à ce problème, il y a :py:mod:`CBC` (Cipher Block Chaining) qui
+Pour palier à ce problème, il y a ``CBC`` (Cipher Block Chaining) qui
 combine le texte avec le ciphertext avant chaque encryption et encrypte block
 par block. Ce mode est plus lent que le ECB.
-Il y a aussi le :py:mod:`CFB` (Cipher FeedBack) qui encrypte octet
+Il y a aussi le ``CFB`` (Cipher FeedBack) qui encrypte octet
 par octet. Ce mode est encore plus lent que CBC. En plus le CFB demande une
 chaine de caractère de base à 8 ou 16 octets à l'initialisation. CBC et CFB
 sont les modes les plus communs.
