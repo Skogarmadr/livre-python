@@ -1,7 +1,6 @@
 """Example de Pycrypto."""
-
-from Crypto.Cipher import AES, DES
 from Crypto import Random
+from Crypto.Cipher import AES, DES
 
 iv_AES = Random.new().read(AES.block_size)  # Vetor d'initialisation
 iv_DES = Random.get_random_bytes(8)  # Vector d'initialisation
