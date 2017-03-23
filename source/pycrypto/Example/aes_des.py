@@ -1,4 +1,4 @@
-"""Example de Pycrypto"""
+"""Example de Pycrypto."""
 
 from Crypto.Cipher import AES
 from Crypto.Cipher import DES
