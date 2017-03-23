@@ -264,7 +264,7 @@ ont la clef privée pourront decrypter le message.
 Exemple code avec AES et DES
 ----------------------------
 
-.. literalinclude:: ./example/aes_des.py
+.. literalinclude:: /Example/aes_des.py
     :linenos:
 
 Resultat:
