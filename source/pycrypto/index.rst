@@ -26,15 +26,15 @@ Mots clefs
 Quelques mots clefs pour aider la compréhension pour la suite :
   - `plaintext`: message original
   - `ciphertext`: message après la transformation cryptograhpique appliqué au
-     message orignal
+                  message orignal
   - `encrypt`: produit le ciphertext en appliquant la transformation
-     cryptograhpique au plaintext
+               cryptograhpique au plaintext
   - `decrypt`: produit le plaintext en appliquant la transformation
-    cryptograhpique au ciphertext
+               cryptograhpique au ciphertext
   - `cipher`: une composition particulière de la transformation
-    cryptograhpique fournissant encryptage et décryptage
+              cryptograhpique fournissant encryptage et décryptage
   - `hash`: transformation cryptographique qui prend une grande entrée
-    et la transforme en une unique sortie (de taille fixée).
+            et la transforme en une unique sortie (de taille fixée).
 
 Type de cryptage
 ----------------
@@ -51,11 +51,11 @@ Pour le symmétrique, il y a deux types de clef :
 Nous allons utiliser le block cipher. Le plus commun et standard avancé est l'AES
 (https://secure.wikimedia.org/wikipedia/en/wiki/Advanced_Encryption_Standard) si
 on n'a pas trop d'idée de quel algorithme de cryptage à utiliser.
-Un peu moins commun est le DES mais c'est le standard de la cryptographie car il
-était très utilisé dans le passé mais sa clef est trop petit aujourd'hui à cause
+Un peu moins commun est le DES.c'est le standard de la cryptographie car il
+était très utilisé dans le passé mais sa clef est trop petitE aujourd'hui à cause
 de ces 56-bit de taille.
 
-Voici une liste des différents alogorithmes possible :
+Voici une liste des différents alogorithmes possibles :
 
    +-----------------------+-----------------------+
    | Nom du module         | Type                  |
@@ -86,8 +86,8 @@ sont transformées en une sorte de variable appelé ``clef`` ce qui va
 produire le ``ciphertext``. Ceci est engendré par des algorithmes
 d'encryptions.
 Les block ciphers qui prennent des entrées d'une taille fixe entre 8 et 16 octets
-les chiffrent. Les cipher blocks requierent des modes. ``ECB``
-(Electronic Code Book) est le mode le plus simple. Ce n'est pas le meilleur parce qu'il
+les chiffrent. Les cipher blocks requierent des modes. ``ECB`` (Electronic Code Book)
+est le mode le plus simple. Ce n'est pas le meilleur parce qu'il
 a une faille quand des fichiers contiennent du code qui a une longueur plus grande
 que celle des blocks.
 Pour palier à ce problème, il y a ``CBC`` (Cipher Block Chaining) qui
@@ -95,7 +95,7 @@ combine le texte avec le ciphertext avant chaque encryption et encrypte block
 par block. Ce mode est plus lent que le ECB.
 Il y a aussi le ``CFB`` (Cipher FeedBack) qui encrypte octet
 par octet. Ce mode est encore plus lent que CBC. En plus le CFB demande une
-chaine de caractère de base à 8 ou 16 octets à l'initialisation. CBC et CFB
+chaine de caractère de base à 8 ou à 16 octets à l'initialisation. CBC et CFB
 sont les modes les plus communs.
 
 .. image:: ./img/penguin.png
@@ -107,7 +107,7 @@ Exemple
 -------
 
 Pour les exemples nous utiliserons le mode CBC.
-Avant de commencer il nous faut créer un nombre aléatoire qui possède la même
+Avant de commencer, il nous faut créer un nombre aléatoire qui possède la même
 taille du bloc car la cryptographie dépend cruciellement d'un nombre aléatoire.
 Nous n'utiliserons pas le random() générateur de python mais celui de PyCrpyto
 car ce premier est inaproprié. Ces données aléatoires sont appellées comme un
@@ -159,9 +159,9 @@ La fonction pour enlever l'ajout
           return data
 
 Maintenant il nous faut une clef pour le symmétrique ciphers.
-Il y a 3 taille de clefs, 16 byte(128 bit), 25 byte(192 bit) ou 32 byte (256 bit).
+Il y a 3 taille de clefs, 16 byte (128 bit), 24 byte (192 bit) ou 32 byte (256 bit).
 
-Nous allons simpwlement génerer une clef aléatoire de 32 bytes avec une fonction.
+Nous allons simplement générer une clef aléatoire de 32 byte avec une fonction.
 
 
 .. code-block:: python3
@@ -256,13 +256,13 @@ Chiffrement avec clés publiques
 
 Quand on fait du chiffrement avec clefs, on va crée des clés publiques. Si une
 personne voudra recevoir des fichiers auxquels il sera le seul à avoir l'
-authorisation de lire, il devra avoir une clef privée. Avec la clef pubique, tout
-pourra y avoir accès quand elle est diffusée. Mais seulement les personnes qui
+authorisation de lire, il devra avoir une clef privée. Avec la clef pubique, tous
+pourront y avoir accès quand elle est diffusée. Mais seulement les personnes qui
 ont la clef privée pourront decrypter le message.
 
 
-Exemple code avec AES et DES
-----------------------------
+Exemple code avec AES et DES en mode CFB
+----------------------------------------
 
 .. literalinclude:: ./Example/aes_des.py
     :linenos:
